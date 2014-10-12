@@ -1,0 +1,49 @@
+
+Solo Group:
+Dawson Botsford
+
+Student ID: 102003505
+
+Initial ideas: 
+- Initially I wanted to keep track of the wrong guessed letters in the hangman game by populating
+	an entire vector to store the alphabet and removing already guessed letters throughout the program
+- I also wanted to use a drawing library to draw the stickman getting hung
+- I also wanted to make the program replayable with a question at the end
+
+Pivots: 
+- When I took a break from programming and hung out with friends I was thinking about the program and realised that there is 
+	no need to use the alphabet at all. Instead I can just add the incorrectly guessed letters to a vector and compare them that way
+	with the current letter guess to see if the guess was a repeat or not
+-I also looked into using OpenGL and realised that it is very difficult to get started with
+-Although making the game replayable is often times easy by just adding a loop around everything, the way
+	I used objects and classes is not very repeatable-friendly. In the interest of saving time for more impressive
+	and interesting manipulations to my code I decided to just allow the user to load up the program again if he
+	wants to play twice.
+
+Data structures: 
+- I used alot of vectors, one string, and alot of object orientation throughout the program
+- I chose vectors so often because they are simpler to iterate through than strings and therefore offer less potential for error
+- I also realised that as a solo group I would not have the time resources to program my own extensive data structures
+- I could have used a map to keep track of the amount of occurances of a letter I have in the word to be guessed. But
+	this approach did not come naturally to my understanding, and therefore was not worth the effort
+- I could have programmed without using object orientation, as we did thoughout CSCI-1300 and the first
+	half of CSCI-2270, but the OO approach was simple to rap my brain around
+	and I knew this would be a good project to learn how to create my own classes and functions.
+
+
+Describe the hardest aspect of this assignment.
+- The hardest aspect was feeling the guilt of abondoning the team. 
+- They were mostly all strangers, and I would not have had the opportunity to learn so much about
+	object orientation had I stayed in the group with them. I probably made them mad because
+	they realised that I would be trying to complete the same thing as a group of 5. And they
+	knew that that would mean they would be docked group power points. But that's not true because
+	they found a way to do graphics to hang the stickman! This is surely going to give them good
+	points because their program looks more aesthetically pleasing
+
+
+
+
+
+
+
+

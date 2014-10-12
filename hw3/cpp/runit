@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm sorting_driver
+make clean
+make all sorting_driver
+
+echo "" 
+
+./sorting_driver
+
+echo -e "\n"

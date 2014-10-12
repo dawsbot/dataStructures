@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm binary_search_tree_driver
+make clean
+make all binary_search_tree_driver
+
+echo "" 
+
+./binary_search_tree_driver
+
+echo -e "\n"

@@ -1,0 +1,52 @@
+
+//A large amount of my planning and calculations were completed on 
+//engineering paper which I have pictures of attached to the email
+
+Author: Dawson Botsford
+
+Title: B-Tree Implementation Design
+Due: Friday, Feb. 22, 2013
+
+TA: Xin Pan
+TA Email: xin.pan@colorado.edu
+
+
+* What does it take on input?                            
+- The implementation will take a key value 
+
+
+                                                              
+* What could be malformed about the input?
+There are few things which the user could malform:
+	-The user could enter a key value which is already placed in the tree.
+		-In this case we could simply ignore the user's input.
+		-We could also throw an error so that the user knows
+		-what they did will not affect the tree's keys nor the 'num'
+		-which is the number of nonempty keys in the node.
+
+
+
+The data type declaration is going to have an array for the keys.
+It will also have an array of pointers to it's children. Then
+it will have a boolean saying whether it is a leaf node or not,
+And lastly, it will have a count of the amount of keys stored
+in the current node
+
+
+
+Recommended functions: 
+
+boolean Is_child()  //Let's you know if the current node has a parent
+
+Insert_Split()  //This is when a node has m-1 keys already and we try
+//to add another key. It will use the find median func and then create
+//two children below this node
+
+Find_Median()  //Does just as it says. This way we know what key value
+//to advance a level above when performing the Insert_Split() func
+
+Helper func's for query:  //these are already described in the powerpoint
+boolean contains()
+tree find_subtree_for()
+
+

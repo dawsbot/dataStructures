@@ -1,0 +1,31 @@
+ 16 private:
+ 15
+ 14    bool m_dead;//whether the user has used all of it's guesses
+ 13
+ 12
+ 11 public:
+ 10
+  9    Hangman();//class constructor
+  8
+  7    //Member variables
+  6    int wrong_answers;//the amount of wrong answers the user has guessed
+  5    int max_wrong;//the max amount of wrong answers we are going to allow
+  4    int len_guess;//the length of the string to guess
+  3
+  2
+  1
+  0    string answer;//the user's word they are attempting to guess
+  1
+  2    char guess;
+  3
+  4    vector<char>alphabet;//holds the a-z alphabet lowercase
+  5    vector<char>progress;//holds the current progress of guessing (start's as _ _ _ _...)
+  6
+  7    //Member functions
+  8    bool getDead();//returns whether the user is dead or not
+  9    void setDead(bool new_dead);//set's the value of dead
+ 10
+ 11    void fillAlphabet();//fill alphabet vector with the alphabet one char at a time
+ 12    void printVector(vector<char>my_vector);//prints out the user inputted vector by iterating through
+ 13
+                                                                                                                      55,29-31      82%

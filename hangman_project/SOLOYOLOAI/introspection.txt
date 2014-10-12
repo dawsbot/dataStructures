@@ -1,0 +1,44 @@
+
+
+
+Dawson Botsford:
+ID: 102003505
+AI Introspection for hangman
+
+
+Initial ideas: 
+	After the user enters a word, the computer tries to solve the word by using a full english dictionary.
+Initially the comp would guess most popular letters first, and then after a letter in the final word is guessed, the computer
+cross-references that with the dictionary and starts to ignore all words which do not have that letter at that index 
+
+
+Pivots: 
+	After looking into the dictionary library and then thinking about the computational logic programming, I decided not to 
+use a dictionary at all, but instead I decided to just examine the most common words in the english language and guess letters
+in order of how common the letters are in the most popular words 
+
+
+Data structures: 
+	The structures I used for the AI that I didn't for the original project was a map. I decided to use this initially
+because I thought I would be able to create an unordered map and then go back again and order the letters by popularity into another
+map. But I found out that maps only can order things the way they want by the order of the key. I could have also used a priority queue,
+but I didn't want to deal with the challenge of altering the C++ PQ 
+
+Describe the hardest aspect of this assignment: 
+	The biggest challenge was discovering that maps do not let you alter the order. 
+I spent around 2 hours messing with the order of the map, but instead I ended up just reading through the unordered map and 
+guessing the most popular letters and then removing them from the map. This worked out perfectly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

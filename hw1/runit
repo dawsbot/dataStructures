@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm linked_list_driver
+make clean
+make all linked_list_driver
+
+echo "" 
+
+./linked_list_driver
+
+echo -e "\n"
